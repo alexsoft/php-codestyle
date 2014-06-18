@@ -23,7 +23,7 @@
 - После открывающих круглых скобок после ключевых слов типа `if`, `elseif`, `else`, `for`, `foreach` и т.д. не должно быть пробела. Также не должно быть пробела перед закрывающими круглыми скобками после ключевых слов типа `if`, `elseif`, `else`, `for`, `foreach` и т.д.
 ### 2.1 Пример
 ```php
-	<?php
+<?php
 	namespace Vendor\Package;
 
 	use FooInterface;
@@ -44,7 +44,7 @@
 		final public static function bar() {
 			// method body
 		}
-	}
+}
 ````
 
 ## 3. Файлы
@@ -58,15 +58,15 @@
 
 ## 4. Вызовы функций
 ```php
-	<?php
-		bar();
-		$foo->bar($arg1);
-		Foo::bar($arg2, $arg3);
+<?php
+	bar();
+	$foo->bar($arg1);
+	Foo::bar($arg2, $arg3);
 
-		// если аргументы очень длинные
-		$foo->bar(
-			$longArgument,
-			$longerArgument,
-			$muchLongerArgument
-		);
+	// если аргументы очень длинные
+	$foo->bar(
+		$longArgument,
+		$longerArgument,
+		$muchLongerArgument
+	);
 ````
