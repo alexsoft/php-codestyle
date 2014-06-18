@@ -45,9 +45,28 @@
 			// method body
 		}
 	}
-```
+````
 
 ## 3. Файлы
 - Все PHP файлы должны иметь Unix LF конец строки.
 - Все PHP файлы должны заканчиваться одной пустой строкой.
 - Если в файле содержится только PHP код, закрывающего тега `?>` не должно быть
+- Должны использоваться `TABS` для отступов
+- PHP [keywords] должны быть в нижнем регистре
+- PHP константы `TRUE`, `FALSE`, `NULL` должны быть в верхнем регистре
+[keywords]: http://php.net/manual/en/reserved.keywords.php
+
+## 4. Вызовы функций
+```php
+	<?php
+		bar();
+		$foo->bar($arg1);
+		Foo::bar($arg2, $arg3);
+
+		// если аргументы очень длинные
+		$foo->bar(
+			$longArgument,
+			$longerArgument,
+			$muchLongerArgument
+		);
+````
