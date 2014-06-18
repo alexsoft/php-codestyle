@@ -24,26 +24,26 @@
 ### 2.1 Пример
 ```php
 <?php
-	namespace Vendor\Package;
+namespace Vendor\Package;
 
-	use FooInterface;
-	use BarClass as Bar;
-	use OtherVendor\OtherPackage\BazClass;
+use FooInterface;
+use BarClass as Bar;
+use OtherVendor\OtherPackage\BazClass;
 
-	class Foo extends Bar implements FooInterface {
-		public function sampleFunction($a, $b = NULL) {
-			if ($a === $b) {
-				bar();
-			} elseif ($a > $b) {
-				$foo->bar($arg1);
-			} else {
-				BazClass::bar($arg2, $arg3);
-			}
+class Foo extends Bar implements FooInterface {
+	public function sampleFunction($a, $b = NULL) {
+		if ($a === $b) {
+			bar();
+		} elseif ($a > $b) {
+			$foo->bar($arg1);
+		} else {
+			BazClass::bar($arg2, $arg3);
 		}
+	}
 
-		final public static function bar() {
-			// method body
-		}
+	final public static function bar() {
+		// method body
+	}
 }
 ````
 
